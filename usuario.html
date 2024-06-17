@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Caronas</title>
+    <link rel="stylesheet" href="upage.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h2>Pedir Carona</h2>
+            <input type="text" id="partida" placeholder="Partida">
+            <input type="text" id="destino" placeholder="Destino">
+            <input type="datetime-local" id="dataHora" placeholder="Data e Hora">
+            <input type="number" id="passageiros" placeholder="Passageiros">
+            <button onclick="pedirCarona()">Pedir Carona</button>
+            <ul id="caronasDisponiveis"></ul>
+        </div>
+        <div class="card">
+            <h2>Oferecer Carona</h2>
+            <input type="text" id="partidaOferta" placeholder="Partida">
+            <input type="text" id="destinoOferta" placeholder="Destino">
+            <input type="datetime-local" id="dataHoraOferta" placeholder="Data e Hora">
+            <input type="number" id="vagas" placeholder="Vagas">
+            <label for="aceitaAutomaticamente">
+                Aceita automaticamente
+                <input type="checkbox" id="aceitaAutomaticamente">
+            </label>
+            <button onclick="oferecerCarona()">Oferecer Carona</button>
+        </div>
+        <div class="card">
+            <h2>Listar Caronas</h2>
+            <ul id="listaCaronas"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
